@@ -1,0 +1,42 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Frontend dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local evaluation reports
+evaluation/results.json
+backend/evidence_verification_results.json
+# Generated crawler data
+crawler/*.json
+crawler/*.jsonl
+crawler/*_report.txt
+crawler/crawl_job/
+
+# Local crawler upload progress
+crawler/upload_progress.json

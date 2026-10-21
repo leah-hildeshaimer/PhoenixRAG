@@ -1,0 +1,70 @@
+
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "מהו ביטוח מקיף לרכב?",
+      "category": "car_insurance",
+      "expected_to_be_answerable": true,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+  
+{
+  "id": 2,
+  "question": "מה ההבדל בין ביטוח חובה לביטוח מקיף?",
+  "category": "car_insurance",
+  "expected_to_be_answerable": true,
+  "expected_source_url": "https://www.fnx.co.il/car-insurance/car_information/vehicle_depreciation/",
+  "expected_answer": "ביטוח חובה מתייחס לפגיעות גוף, בעוד שביטוח מקיף מספק הגנה גם מפני נזקי רכוש לרכב ולרכוש צד שלישי, וכולל בין היתר כיסוי לתאונה, פריצה וגניבה."
+},
+    {
+      "id": 3,
+      "question": "אילו כיסויים מציעה הפניקס בביטוח דירה?",
+      "category": "home_insurance",
+      "expected_to_be_answerable": true,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+    {
+      "id": 4,
+      "question": "איך מגישים תביעה בביטוח רכב בהפניקס?",
+      "category": "claims",
+      "expected_to_be_answerable": true,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+    {
+      "id": 5,
+      "question": "מהי קרן פנסיה?",
+      "category": "pension",
+      "expected_to_be_answerable": true,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+    {
+      "id": 6,
+      "question": "מהי בירת צרפת?",
+      "category": "out_of_scope",
+      "expected_to_be_answerable": false,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+    {
+      "id": 7,
+      "question": "מה תהיה הטמפרטורה בירושלים מחר?",
+      "category": "out_of_scope",
+      "expected_to_be_answerable": false,
+      "expected_source_url": null,
+      "expected_answer": null
+    },
+    {
+      "id": 8,
+      "question": "כמה כסף יש לי בחשבון הבנק כרגע?",
+      "category": "unavailable_personal_data",
+      "expected_to_be_answerable": false,
+      "expected_source_url": null,
+      "expected_answer": null
+    }
+  ]
+}
