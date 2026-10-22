@@ -1,10 +1,11 @@
-
+﻿
 import os
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.chat import router as chat_router
+from api.compass import router as compass_router
 
 
 app = FastAPI(
@@ -25,13 +26,16 @@ frontend_url = os.getenv("FRONTEND_URL", "").strip().rstrip("/")
 if frontend_url:
     allowed_origins.append(frontend_url)
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
+    allow_origin_regex=r"^http://(localhost|127\.0\.0\.1):\d+$",
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
 )
+
 
 
 @app.get("/")
@@ -48,3 +52,5 @@ def health_check():
 
 
 app.include_router(chat_router)
+app.include_router(compass_router)
+
